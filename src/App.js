@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Counter from './Counter';
 import './App.css';
 
 class App extends Component {
+
+
   render() {
+
     return (
       <div className="App">
-
-        <h1>Counter App</h1>
-        <p>0</p>
-        <button>Increment</button>
-
+        <Counter initialNumber={0} />
+        <Counter initialNumber={-5} />
+        <Counter initialNumber={-20} />
+        <Counter initialNumber={1} />
       </div>
     );
   }
